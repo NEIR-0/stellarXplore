@@ -1,0 +1,1483 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    background-color: black;
+}
+
+section{
+    scroll-snap-align: start;
+}
+
+.navbar{
+    background-color: white;
+    z-index: 999;
+    transition: .3s ease-in-out;
+}
+
+/* animations */
+.navbar-fixed{
+    color: white;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    box-shadow: inset 0 -1px 0 0 rgba(255, 255, 255, 0.2)
+}
+
+.change-color{
+    color: white;
+}
+
+.Ccolor-mid{
+    color: black;
+    text-shadow: 1px 2px 3px white;
+}
+
+.linker:hover::after {
+    content: "";
+    border-bottom: 3px solid red;
+    display: block;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+}
+
+.change-color:hover{
+    color: white;
+}
+
+.change-color:hover::after {
+    content: "";
+    border-bottom: 3px solid red;
+    display: block;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+}
+
+.in-navbar{
+    width: 75%;
+}
+
+.searchclick{
+    cursor: pointer;
+}
+
+.hide{
+    margin-top: 5px;
+    position: absolute;
+    left: -50%;
+    top: 100%;
+    width: 300px;
+
+    font-weight: lighter;
+    color: #0E0E0E;
+    background: #FFFFFF;
+    padding: 5px;
+    border: none;
+    border-radius: 2px;
+    transition: 0.3s ease-in-out;
+}
+
+.hide:focus{
+    outline: none;
+    box-shadow: 0 0 10px #FFFFFF;
+}
+
+/* animations */
+.search-active{
+    left: 14%;
+}
+
+.logo, .Pweather{
+    display: none;
+}
+
+/* hero */
+.hero{
+    background-image: url("img/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+}
+
+.filHero{
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, #0E0E0E 100%);
+    bottom: 0;
+    left: 0;
+    height: 100px;
+}
+
+.Thero{
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    color: white;
+}
+
+.Thero p{
+    font-weight: 200px;
+    font-size: 25px;
+    line-height: 20px;
+    text-shadow: 6px 10px 4px rgba(0, 0, 0, 0.5);
+}
+
+.Thero h2{
+    font-size: 120px;
+    line-height: 130px;
+    text-shadow: 6px 10px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* date */
+.date{
+    background-color: #0E0E0E;
+    width: 100%;
+    height: 200px;
+}
+
+.in-date{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.region, .time{
+    border: 2px solid #808080; 
+    width: 25%;
+    color: white;
+}
+
+.region p, .time p{
+    font-size: 15px;
+}
+
+.region h2{
+    font-size: 35px;
+}
+
+.time h2{
+    padding-top: 0.50rem;
+    font-size: 30px;
+}
+
+.blink{
+    animation: blink 5s infinite;
+
+}
+
+@keyframes blink{
+    0%, 100%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+}
+
+.src{
+    margin: auto;
+    width: 60%;
+    color: #D58F38;
+}
+
+.titik{
+    width: 40px;
+    position: relative;
+    letter-spacing: 2px;
+}
+
+/* animations */
+.typing{
+    position: absolute;
+    background-color: #0E0E0E;
+    top: 0;
+    right: 0;
+    height: 100%;
+    animation: type 7s infinite;
+}
+
+@keyframes type{
+    0%, 100%{
+        width: 100%;
+    }
+
+    50%{
+        width: 0px;
+    }    
+}
+
+/* adventures */
+.adventures{
+    background: linear-gradient(#0E0E0E, #0E0E1A);
+    height: fit-content;
+}
+
+.adventures p{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.adventures h2{
+    font-size: 50px;
+    margin-bottom: 100px;
+}
+
+.planet{
+    position: relative;
+    width: 90%;
+    height: 450px;
+    margin: auto;
+}
+
+.in-planet{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 400px;
+    border-radius: 5px;
+}
+
+#mars{
+    background-image: url("img/marsbg.jpg");
+}
+
+#neptune{
+    background-image: url("img/neptunebg.jpg");
+}
+
+#jupiter{
+    background-image: url("img/jupiterbg.jpg");
+}
+
+.Pfilter{
+    border-radius: 5px;
+    background: linear-gradient(180deg, #0E0E0E 0%, rgba(217, 217, 217, 0) 43.75%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.in-planet img{ 
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    filter: drop-shadow(5px 10px 8px rgba(255, 255, 255, 0.5));
+}
+
+.desPlanet{
+    color: white;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.desPlanet p{
+    margin-bottom: 0;
+    font-size: 25px;
+    line-height: 40px;
+    text-shadow: 1px 4px 4px rgba(0, 0, 0, 1);
+}
+
+.desPlanet h2{
+    font-size: 40px;
+    line-height: 50px;
+    text-shadow: 1px 4px 4px rgba(0, 0, 0, 1);
+}
+
+.in-planet button{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+    font-size: 25px;
+    line-height: 30px;
+    background: #D58F38;
+    border: 1px solid #D97900;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+}
+
+.in-planet button:hover{
+    color: #D58F38;
+    background-color: white;
+}
+
+/* space */
+.space{
+    background-image: url("img/bgspace.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+}
+
+.in-space{
+    height: 100%;
+}
+
+.astro{
+    height: 100%;
+    position: relative;
+}
+
+.astrobg{
+    background-image: url("img/blob.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    filter: drop-shadow(5px 10px 8px rgba(255, 255, 255, 0.5));
+    width: 95%;
+    height: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.astro img{ 
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* animations */
+    animation: float 5s ease-in-out infinite;
+}
+
+/* animations */
+@keyframes float {
+	0% {
+
+        top: 50%;
+	}
+	50% {
+        top: 40%;
+	}
+
+    100%{
+        top: 50%;
+    }
+}
+
+.detail{
+    height: 100%;
+    color: white;
+    position: relative;
+}
+
+.in-detail{
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(16.4px);
+    -webkit-backdrop-filter: blur(16.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+    height: fit-content;
+}
+
+.in-detail p{
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+
+.titleSpace h2{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+.titleSpace h3{
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 30px;
+}
+
+.underline{
+    background-color: white;
+    height: 3px;
+}
+
+.in-underline{
+    background-color: red;
+    height: 3px;
+}
+
+.desSpace{
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.desSpace p{
+    font-size: 30px;
+}
+
+.pre{
+    position: absolute;
+    transition: .5s ease-in-out;
+    width: 95%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    font-weight: 200;
+    line-height: 30px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+}
+
+.disActive{
+    opacity: 0;
+}
+
+.dpls, .dsd, .dcr{
+    position: absolute;
+    transition: .5s ease-in-out;
+    opacity: 0;
+    width: 95%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    text-align: justify;
+    font-weight: 200;
+    line-height: 30px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+}
+
+/* animations */
+.desActives{
+    opacity: 1;
+}
+
+.pls, .sd, .cr{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #FFFFFF;
+
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    transition: .3s ease;
+}
+
+.buttonActive{
+    background-color: rgb(255, 83, 83);
+    filter: drop-shadow(3px 5px 2px rgba(255, 0, 0, 0.5));
+}
+
+.listButton button:hover{
+    background-color: rgb(255, 83, 83);
+    filter: drop-shadow(3px 5px 2px rgba(255, 0, 0, 0.5));
+}
+
+/* preview */
+.preview{
+    background: linear-gradient(#0E0E1A, black);
+    width: 100%;
+    height: 100vh;
+}
+
+.preview h2{
+    color: white;
+    letter-spacing: 5px;
+}
+
+.preImg{
+    height: 420px;
+}
+
+.pre1, .pre2{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 210px;
+    transition: .3s ease-in-out;
+}
+
+.pre1{
+    background-image: url("img/pre1.jpg");
+}
+
+.pre2{
+    background-image: url("img/pre2.jpg");
+    background-position: bottom;
+}
+
+.pre3, .pre4{
+    background-repeat: no-repeat;
+    height: 210px;
+    background-size: 100% 100%;
+    transition: .3s ease-in-out;
+}
+
+.pre3{
+    background-image: url("img/pre3.jpg");
+}
+
+.pre4{
+    background-image: url("img/pre4.jpg");
+}
+
+/* animations */
+.pre1:hover, .pre2:hover, .pre3:hover{
+    transform: scale(1.1);
+    background-position:center; 
+}
+
+.desPreview{
+    height: 210px;
+    position: relative;
+}
+
+.cardDes{
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    position: absolute;
+    right: 0%;
+    width: 80%;
+    height: 180px;
+}
+
+.cardDes h2{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.in-desPreview{
+    text-align: justify;
+    color: white;
+}
+
+.in-desPreview p{
+    font-size: 15px;
+}
+
+/* planet */
+.planetPreview{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 100px;
+}
+
+.in-planetPreview{
+    width: 100%;
+    height: 100%;
+}
+
+.back{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.funFact{
+    height: 100%;
+    width: 50%;
+}
+
+.in-funfact{
+    border-radius: 10px;
+    height: 60%;
+    color: white;
+}
+
+.titleFF{
+    font-size: 40px;
+    text-align: left;
+}
+
+.FF{
+    text-align: justify;
+}
+
+.seemoreFun{
+    color: white;
+    height: 20%;
+}
+
+.seeFF{
+    border-radius: 10px;
+    width: 25%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.seeFF:hover{
+    background-color: white;
+    color: black;
+}
+
+.FFPlanet{
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80%;
+}
+
+#marsP{
+    background-image: url("img/mars.jpg");
+    background-size: 800px;
+}
+
+#nepP{
+    background-image: url("img/neptune.jpg");
+    background-size: 900px;
+}
+
+#mercuryP{
+    background-image: url("img/mercury.jpg");
+    background-size: 700px;
+}
+
+#venusP{
+    background-image: url("img/venus.jpg");
+    background-size: 750px;
+}
+
+#uranusP{
+    background-image: url("img/uranus.jpg");
+    background-size: 1000px;
+}
+
+#saturnusP{
+    background-image: url("img/saturnus.jpg");
+    background-size: 800px;
+}
+
+#moonP{
+    background-image: url("img/moonP.jpg");
+    background-size: 600px;
+}
+
+.front-one{
+    position: absolute;
+    width: 50%;
+    height: 100px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+
+.front-two{
+    position: absolute;
+    width: 45%;
+    height: 100px;
+    opacity: 0.5;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+}
+
+.navigasp, .PlanetSliders{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.in-navigasp, .in-PlanetSliders{
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#Nmars{
+    background-image: url("img/mars-removebg-preview.png");
+    background-size: 150px;
+}
+
+#Nneptune{
+    background-image: url("img/neptune-removebg-preview.png");
+    background-size: 200px;
+}
+
+#Nmercury{
+    background-image: url("img/mercury-removebg-preview.png");
+    background-size: 150px;
+}
+
+#Nvenus{
+    background-image: url("img/venus-removebg-preview.png");
+    background-size: 150px;
+}
+
+#NUranus{
+    background-image: url("img/uranus-removebg-preview.png");
+    background-size: 150px;
+}
+
+#NSaturn{
+    background-image: url("img/saturnus-removebg-preview.png");
+    background-size: 150px;
+}
+
+#Nmoon{
+    background-image: url("img/moonP-removebg-preview.png");
+    background-size: 120px;
+} 
+
+.in-planetPreview-mid{
+    display: none;
+}
+
+/* swiper js */
+.swiper {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide > .PlanetSliders{
+    filter: grayscale(1);
+    transform: scale(0.7);
+    transition: .3s ease-in-out;
+}
+
+.swiper-slide-active > .PlanetSliders{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+.bgtrans{
+    background: transparent;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    right:10px;
+    padding: 30px;
+    color: red !important;
+}
+
+.swiper-pagination-bullet{
+    opacity: 1;
+    background-color: #ffff !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #F01E00 !important;
+}
+
+
+/* profiles */
+.bgprofiles{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.bgprofiles img{
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.desProfiles{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.desProfiles h2{
+    font-weight:4700;
+    font-size: 150px;
+    line-height: 222px;
+    text-shadow: 13px 8px 4px rgba(255, 255, 255, 0.25);
+}
+
+.desProfiles p{
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 20px;
+}
+
+/* footer */
+.footer{
+    background-color: #0E0E1A;
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+
+.footer h2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    font-weight: 200;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+
+/* ipad */
+@media all and (max-width: 1000px) {
+    /* animations */
+    .navbar-fixed{
+        color: black;
+        background: white;
+    }
+
+    .change-color{
+        color: black;
+    }
+    
+    .change-color:hover{
+        background-color: rgba(0, 0, 0, 0.5);
+        color: black;
+    }
+    
+    .linker:hover::after {
+        display: none;
+    }
+    
+    .change-color:hover::after {
+        display: none;
+    }
+
+    .in-navbar{
+        width: 100%;
+    }
+
+    .Pweather{
+        display: block;
+        height: 150px;
+    }
+
+    .Pweather h2{
+        font-size: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .logo{
+        display: block;
+    }
+
+    .searchbar, .weather, .mid{
+        display: none;
+    }
+
+    /* hero */
+    .hero{
+        height: 400px;
+    }
+
+    .Thero p{
+        font-size: 10px;
+    }
+    
+    .Thero h2{
+        font-size: 50px;
+        line-height: 20px;
+    }
+
+    /* date */
+    .date{
+        height: 100px;
+    }
+
+    .region{
+        width: 20%;
+    }
+
+    .region p, .time p{
+        font-size: 7px;
+        margin-bottom: 0;
+    }
+    
+    .region h2{
+        font-size: 25px;
+    }
+
+    .time h2{
+        padding-top: 0.50rem;
+        font-size: 20px;
+    }
+
+    .src{
+        width: 70%;
+    }
+    
+    .titik{
+        letter-spacing: 1px;
+    }
+
+    /* adventures */
+    .adventures h2{
+        margin-bottom: 70px;
+    }
+
+    .planet{
+        width: 100%;
+        height: 300px;
+    }
+
+    .in-planet{
+        height: 250px;
+    }
+
+    .in-planet img{ 
+        width: 150px;
+    }
+
+    .desPlanet{
+        top: 65%;
+    }
+    
+    .desPlanet p{
+        font-size: 10px;
+        line-height: 15px;
+    }
+    
+    .desPlanet h2{
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .in-planet button{
+        font-size: 15px;
+        line-height: 20px;
+    } 
+
+    /* space */
+    .space{
+        height: fit-content;
+    }
+    
+    .in-space{
+        height: 320px;
+    }
+
+    .astro{
+        height: 100%;
+    }
+    
+    .astro img{ 
+        width: 250px;
+    }   
+    
+    .in-detail{
+        height: 100%;
+    }
+    
+    .in-detail p{
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    
+    .titleSpace h2{
+        font-size: 25px;
+        line-height: 20px;
+    }
+    
+    .titleSpace h3{
+        font-size: 15px;
+    }
+    
+    .desSpace{
+        width: 100%;
+        height: 100px;
+        position: relative;
+    }
+
+    .desSpace p{
+        font-size: 15px;
+    }
+
+    .dpls, .dsd, .dcr{
+        line-height: 20px;
+    }
+    
+    .pls, .sd, .cr{
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    /* preview */
+    .preview{
+        height: fit-content;
+    }
+
+    .preImg{
+        height: 100%;
+    }
+
+    .pre1, .pre2{
+        margin: auto;
+        height: 150px;
+    }
+
+    .pre3, .pre4{
+        height: 150px;
+    }
+
+    .pre4{
+        margin: 0 30px;
+    }
+
+    .desPreview{
+        height: 150px;
+        margin: 10px 20px;
+    }
+    
+    .cardDes{
+        top: 45%;
+        left: 49%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 130px;
+    }
+
+    .cardDes h2{
+        font-size: 25px;
+        line-height: 20px;
+    }
+
+    .in-desPreview p{
+        font-size: 13px;
+    }
+
+    /* fun fact */
+    .planetPreview{
+        height: fit-content;
+        margin-bottom: 0px;
+    }
+    .in-planetPreview{
+        display: none;
+    }
+
+    .in-planetPreview-mid{
+        display: block;
+    }
+    
+    .titlePP p{
+        margin-bottom: 0;
+        font-size: 15px;
+        line-height: 30px;
+    }
+    
+    .titlePP h2{
+        font-size: 30px;
+    }
+    
+
+    .desFunFact{
+        width: 50%;
+        height: 320px;
+        padding: 20px;
+    }
+
+    .in-desFunFact{
+        height: 80%;
+    }
+
+    .titleFF{
+        font-size: 30px;
+    }
+    
+    .FF{    
+        font-size: 14px;
+    }
+
+    .imgFun-Fact{
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 80%;
+    }
+    
+    #marsPP{
+        background-image: url("img/mars.jpg");
+        background-size: 400px;
+    }
+    #nepPP{
+        background-image: url("img/neptune.jpg");
+        background-size: 500px;
+    }
+    #merPP{
+        background-image: url("img/mercury.jpg");
+        background-size: 350px;
+    }
+    #venPP{
+        background-image: url("img/venus.jpg");
+        background-size: 350px;
+    }
+    #uraPP{
+        background-image: url("img/uranus.jpg");
+        background-size: 500px;
+    }
+    #saturPP{
+        background-image: url("img/saturnus.jpg");
+        background-size: 400px;
+    }
+    #moonPP{
+        background-image: url("img/moon.jpg");
+        background-size: 300px;
+    }
+
+    .PseeMores{
+        border-radius: 5px;
+        color: white;
+        width: 15%;
+        transition: .3s ease-in-out;
+    }
+
+    .PseeMores:hover{
+        color: black;
+        background-color: white;
+    }
+
+    /* profiles */
+    .bgprofiles{
+        height: 500px;
+    }
+
+    .bgprofiles img{
+        width: 700px;
+    }
+
+    .desProfiles h2{
+        font-size: 100px;
+        line-height: 150px;
+    }
+
+    .desProfiles p{
+        font-size: 25px;
+    }
+
+    /* footer */
+    .footer h2{
+        width: 100%;
+        font-size: 15px;
+    }
+}
+
+
+/* phone */
+@media all and (max-width: 670px) {   
+    /* animations */
+    .navbar-fixed{
+        color: black;
+        background: white;
+    }
+    
+    .change-color{
+        color: black;
+    }
+
+    .hero{
+        height: 250px;
+    }
+
+    .Thero p{
+        font-size: 7px;
+    }
+    
+    .Thero h2{
+        font-size: 35px;
+        line-height: 10px;
+    }
+
+    /* date */
+    .date{
+        height: 80px;
+    }
+
+    .region{
+        width: 30%;
+        padding-top: 0.50rem;
+        padding-left: 0.50rem;
+        padding-right: 3rem;
+    }
+
+    .region p{
+        font-size: 5px;
+        margin-bottom: 0;
+    }
+    
+    .region h2{
+        font-size: 15px;
+    }
+
+    .time{
+        display: none;
+    }
+
+    /* adventures */
+    .adventures p{
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 0;
+        padding-top: 30px;
+    }
+    
+    .adventures h2{
+        font-size: 40px;
+        margin-bottom: 100px;
+    }
+
+    .planet{
+        width: 100%;
+        height: 350px;
+    }
+
+    .midPlanet{
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+    }
+
+    .in-planet{
+        height: 320px;
+    }
+
+    .in-planet img{ 
+        width: 180px;
+    }
+
+    .desPlanet{
+        top: 65%;
+    }
+    
+    .desPlanet p{
+        font-size: 15px;
+        line-height: 30px;
+    }
+    
+    .desPlanet h2{
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    .in-planet button{
+        font-size: 18px;
+        line-height: 20px;
+    } 
+
+    /* space */
+    .space{
+        height: fit-content;
+    }
+    
+    .in-space{
+        height: fit-content;
+    }
+    
+    .astro{
+        height: 200px;
+    }
+    
+    .astro img{ 
+        width: 200px;
+    }
+
+    .detail{
+        height: 350px;
+    }
+
+    .in-detail{
+        width: 100%;
+        height: fit-content;
+    }
+    
+    .in-detail p{
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    
+    .titleSpace h3{
+        line-height: 25px;
+        font-size: 12px;
+    }
+    
+    .desSpace{
+        height: 170px;
+        padding-top: 10px;
+    }
+
+    .desSpace p{
+        font-size: 15px;
+    }
+    
+    .pls, .sd, .cr{
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    /* preview */
+    .preview{
+        height: fit-content;
+    }
+
+    .preImg{
+        height: 100%;
+    }
+
+    .desPreview{
+        height: 150px;
+        margin: 10px 20px;
+    }
+
+    .cardDes{
+        top: 45%;
+        left: 47%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+    }
+
+    .in-desPreview p{
+        font-size: 9px;
+    }
+
+    /* fun fact */
+    .planetPreview{
+        height: fit-content;
+    }
+    .in-planetPreview{
+        display: none;
+    }
+
+    .in-planetPreview-mid{
+        display: block;
+    }
+    
+    .swiper-slide{
+        flex-direction: column;
+        
+    }
+
+    .desFunFact{
+        width: 100%;
+        height: 250px;
+        padding: 20px;
+    }
+
+    .in-desFunFact{
+        height: 100%;
+    }
+
+    .titleFF{
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+    
+    .FF{    
+        font-size: 13px;
+    }
+
+    .imgFun-Fact{
+        height: 80%;
+    }
+    
+    #marsPP{
+        background-size: 300px;
+    }
+    #nepPP{
+        background-size: 400px;
+    }
+    #merPP{
+        background-size: 300px;
+    }
+    #venPP{
+        background-size: 300px;
+    }
+    #uraPP{
+        background-size: 400px;
+    }
+    #saturPP{
+        background-size: 380px;
+    }
+    #moonPP{
+        background-size: 250px;
+    }
+
+    .pg{
+        margin-top: 2000px;
+    }
+
+    .PseeMores{
+        color: white;
+        width: 30%;
+        transition: .3s ease-in-out;
+    }
+
+    .PseeMores:hover{
+        color: black;
+        background-color: white;
+    }
+
+    /* profiles */
+    .bgprofiles{
+        height: 300px;
+    }
+
+    .bgprofiles img{
+        width: 350px;
+    }
+
+    .desProfiles h2{
+        font-size: 60px;
+        line-height: 70px;
+        text-shadow: 5px 7px 4px rgba(255, 255, 255, 0.25);
+    }
+
+    .desProfiles p{
+        font-size: 20px;
+    }
+
+    /* footer */
+    .footer h2{
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+}

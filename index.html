@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="img/logo.png" type="image/icon type">
+    <title>StellarXplor | Space to Unbound</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg position-fixed w-100">
+      <div class="in-navbar container-fluid">
+        <div class="searchbar mx-2 fs-5 w-50">
+          <i class="searchclick bi bi-search"></i>
+          <input type="text" class="hide px-2" placeholder="Search...">
+        </div>
+          <h2 class="logo fw-bold fs-2 my-auto">StellarXplor</h2>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-nav w-100 justify-content-center mx-auto">
+          <div class="link collapse navbar-collapse" id="navbarNavAltMarkup">
+            <a class="linker nav-link px-5 fs-5 fw-light mx-auto" href="#adven">Adventures</a>
+            <a class="linker nav-link px-5 fs-5 fw-light mx-auto" href="#spaces">Space</a>
+            <a class="mid nav-link px-5 fs-4 fw-bold" href="#heroes">StellarXplor</a>
+            <a class="linker nav-link px-5 fs-5 fw-light mx-auto" href="#previews">Preview</a>
+            <a class="linker nav-link px-5 fs-5 fw-light mx-auto" href="#facts">Fact</a>
+            <div class="Pweather my-3 text-center position-relative">
+              <h2>-5<i class="bi bi-cloud-fill ms-2"></i></h2>
+            </div>
+          </div>
+        </div>
+        <div class="weather mx-2 w-75">
+          <h2 class="fs-4 my-auto">-5<i class="bi bi-cloud-fill ms-1"></i></h2>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- hero -->
+    <section id="heroes">
+      <div class="hero pt-5 position-relative">
+        <div class="filHero w-100 position-absolute"></div>
+        <div class="Thero row container m-auto position-absolute">
+          <div class="col text-center">
+            <p class="fw-light">Beyond Imagination</p>
+            <h2 class="fw-bold">ZERO GRAVITY</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- date -->
+    <section>
+      <div class="date position-relative">
+        <div class="in-date row container m-auto position-absolute">
+          <div class="col d-flex justify-content-center" data-aos="fade-down">
+
+            <div class="region pt-md-2 pb-md-1 ps-md-3 pe-md-5  text-start ">
+              <p class="fw-light">Region:</p>
+              <h2 class="blink fw-bold">SEA</h2>
+            </div>
+            
+            <div class="region pt-md-2 pb-md-1 ps-md-3 pe-md-5 text-start ">
+              <p class="fw-light">Target:</p>
+              <h2 class="blink fw-bold">Moon</h2>
+            </div>
+
+            <div class="time pt-md-2 pb-md-1 ps-md-3 pe-md-5 text-start ">
+              <p class="fw-light">Time:</p>
+              <h2 class="blink fw-bold">17-03-2070</h2>
+            </div>
+
+            <div class="region pt-md-2 pb-md-1 ps-md-3 pe-md-5 text-start ">
+              <p class="fw-light">Ticket:</p>
+              <h2 class="blink fw-bold">Adult</h2>
+            </div>
+
+            <div class="region ps-3 pe-5 py-2 text-start position-relative">
+              <h2 class="src my-auto position-absolute top-50 start-50 translate-middle fw-bold">Search<span class="titik">... <div class="typing"></div>
+              </span></h2>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- adventures -->
+    <section id="adven">
+      <div class="adventures py-5">
+        <div class="row container mx-auto text-center">
+          <p class="fw-light mt-xl-5 text-white">Join our’s</p>
+          <h2 class="fw-bold text-white">ADVENTURES</h2>
+        </div>
+
+        <div class="container" data-aos="fade"  data-aos-duration="1500">
+          <div class="row">
+            <div class="col-12">
+              <div class="row mt-xl-4 px-5">
+
+                <div class="col-sm text-center">
+                  <div class="planet">
+                    <div class="in-planet" id="mars">
+                      <div class="Pfilter"></div>
+                      <img src="img/mars.png" alt="">
+                      <div class="desPlanet">
+                        <p class="fw-light">mars</p>
+                        <h2 class="fw-bold">Pioneering Spirit</h2>
+                      </div>
+                      <button class="p-2 fw-bold">Join's</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm text-center">
+                  <div class="planet midPlanet">
+                    <div class="in-planet" id="neptune">
+                      <div class="Pfilter"></div>
+                      <img src="img/neptune.png" alt="">
+                      <div class="desPlanet">
+                        <p class="fw-light">Neptune</p>
+                        <h2 class="fw-bold">Dive into Mysteries</h2>
+                      </div>
+                      <button class="p-2 fw-bold">Join's</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm text-center">
+                  <div class="planet">
+                    <div class="in-planet" id="jupiter">
+                      <div class="Pfilter"></div>
+                      <img src="img/jupiter.png" alt="">
+                      <div class="desPlanet">
+                        <p class="fw-light">Jupiter</p>
+                        <h2 class="fw-bold">Journey's Majesty</h2>
+                      </div>
+                      <button class="p-2 fw-bold">Join's</button>
+                    </div>
+                  </div>
+                </div>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- space -->
+    <section id="spaces">
+      <div class="space py-5">
+        <div class="in-space row container m-auto p-md-3">
+
+          <div class="col-md-5 p-md-2">
+            <div class="astro">
+              <div class="astrobg"></div>
+              <img src="img/astronot.png" alt="">
+            </div>
+          </div> 
+
+          <div class="col-md-7 p-md-2 p-sm-0">
+            <div class="detail" data-aos="fade-left"  data-aos-duration="1500">
+              <div class="in-detail p-3">
+                <p>Detail</p>
+                <div class="titleSpace d-flex justify-content-between">
+                  <h2 class="my-auto">Space</h2>
+                  <h3 class="my-auto text-black">Exploring the Vastness of Space</h3>
+                </div>
+                <div class="underline mt-2">
+                  <div class="in-underline w-25"></div>
+                </div>
+                <div class="desSpace my-lg-4 my-md-2">
+                  <p class="pre fw-bold">Click any button down there..!</p>
+                  <p class="dpls"><span class="fw-bold">Plasma</span>, Infinite expanse and mysteries waiting to be unravelled. Embark on an awe-inspiring journey beyond Earth, where gravity fades, and the beauty of the cosmos comes to life. Unleash your curiosity and explore new frontiers, from distant planets to dazzling stars, and unlock the secrets of the universe.</p>
+                  <p class="dsd"><span class="fw-bold">Space debris</span>, refers to man-made objects that are no longer functional or operational and are left orbiting in space. These objects can include spent rocket stages, defunct satellites, discarded spacecraft parts, and other debris resulting from human space activities.</p>
+                  <p class="dcr"><span class="fw-bold">Cosmic rays</span>, high-energy particles that originate from various sources in space, including stars, supernovae, and other cosmic events. These particles travel at nearly the speed of light and can penetrate through the vacuum of space, as well as through planetary atmospheres and other matter.</p>
+                </div>
+                <div class="listButton d-flex justify-content-between mt-md-4">
+                  <button class="pls w-25 py-2">Plasma</button>
+                  <button class="sd w-25 py-2">Space debris</button>
+                  <button class="cr w-25 py-2">Cosmic rays</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Preview -->
+    <section id="previews">
+      <div class="preview py-5">
+        <div class="row container m-auto p-5 text-center">
+          <h2 class="fw-bold fs-2">PREVIEW</h2>
+        </div>
+        <div class="preImg container row mx-auto mt-3">
+          <div class="col-lg-6 container px-5">
+            <div class="row">
+              <div class="pre1 col-3"></div>
+              <div class="pre2 col-3"></div>
+            </div>
+            <div class="pre3 row"></div>
+          </div>
+          <div class="col-lg-6 container">
+            <div class="desPreview row">
+              <div class="cardDes m-2 pt-2" data-aos="fade-right"  data-aos-duration="1500">
+                <h2>Feed back</h2>
+                <div class="underline mt-2">
+                  <div class="in-underline w-25"></div>
+                </div>
+                <div class="in-desPreview mt-2">
+                  <p>I used a travel agent to plan and book my honeymoon, and it was a great experience. Our agent was knowledgeable about the destinations we were considering and was able to provide us with a variety of options that fit our budget and preferences.</p>
+                </div>
+              </div>  
+            </div>
+            <div class="pre4 row" data-aos="fade-left"  data-aos-duration="1500">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Planet -->
+    <section id="facts">
+      <div class="planetPreview py-5">
+        <div class="in-planetPreview mt-4 text-center">
+          <p class="fw-light mt-lg-5 text-white">Discover</p>
+          <h2 class="fw-bold text-white">Other World</h2>
+          <div class="back">
+            <div class="swiper mySwiper1" data-aos="fade"  data-aos-duration="1500">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide text-white justify-content-between bg-black">
+                    <div class="funFact p-3 m-2">
+                      <div class="in-funfact">
+                        <h2 class="titleFF fw-bold pt-3 ps-3">Fun Fact</h2>
+                        <div class="underline">
+                        <div class="in-underline w-25"></div>
+                        </div>
+                        <p class="FF fw-light fs-4 p-2">
+                          Mars has the largest volcano in the solar system, called Olympus Mons. It stands at a height of 22 kilometers (14 miles), making it almost three times taller than Mount Everest, the tallest mountain on Earth. Interestingly, Olympus Mons is also one of the youngest volcanoes on Mars, with its last eruption estimated to have occurred only about 25 million years ago, which is relatively recent in geological time.
+                        </p>
+                      </div>
+                      <div class="seemoreFun mt-3">
+                        <div class="seeFF">
+                          <h2 class="p-1">See More</h2>
+                        </div>
+                      </div>
+                    </div>   
+                    <div class="funFact p-3">
+                      <div class="FFPlanet" id="marsP"></div>
+                    </div>    
+                </div>
+
+                <div class="swiper-slide text-white justify-content-between bg-black">
+                  <div class="funFact p-3 m-2">
+                    <div class="in-funfact">
+                      <h2 class="titleFF fw-bold pt-3 ps-3">Fun Fact</h2>
+                      <div class="underline">
+                      <div class="in-underline w-25"></div>
+                      </div>
+                      <p class="FF fw-light fs-4 p-2">
+                        Neptune is the eighth and farthest known planet from the sun in our solar system. One interesting fact about Neptune is that it is the windiest planet in our solar system, with winds that can reach speeds of up to 2,100 kilometers (1,300 miles) per hour. These strong winds are caused by the planet's rapid rotation and its large, thick atmosphere, which is primarily made up of hydrogen, helium, and methane gas.
+                      </p>
+                    </div>
+                    <div class="seemoreFun mt-3">
+                      <div class="seeFF">
+                        <h2 class="p-1">See More</h2>
+                      </div>
+                    </div>
+                  </div>   
+                  <div class="funFact p-3">
+                    <div class="FFPlanet" id="nepP"></div>
+                  </div> 
+                </div>
+
+                <div class="swiper-slide text-white justify-content-between bg-black">
+                  <div class="funFact p-3 m-2">
+                    <div class="in-funfact">
+                      <h2 class="titleFF fw-bold pt-3 ps-3">Fun Fact</h2>
+                      <div class="underline">
+                      <div class="in-underline w-25"></div>
+                      </div>
+                      <p class="FF fw-light fs-4 p-2">
+                        Mercury is the smallest planet in our solar system, and also the closest planet to the sun. One interesting fact about Mercury is that it has a very slow rotation compared to other planets in our solar system, with one day on Mercury taking about 59 Earth days. However, despite its slow rotation, Mercury has a very fast orbital speed around the sun, completing one orbit in just 88 Earth days.
+                      </p>
+                    </div>
+                    <div class="seemoreFun mt-3">
+                      <div class="seeFF">
+                        <h2 class="p-1">See More</h2>
+                      </div>
+                    </div>
+                  </div>   
+                  <div class="funFact p-3">
+                    <div class="FFPlanet" id="mercuryP"></div>
+                  </div> 
+                </div>
+
+                <div class="swiper-slide text-white justify-content-between bg-black">
+                  <div class="funFact p-3 m-2">
+                    <div class="in-funfact">
+                      <h2 class="titleFF fw-bold pt-3 ps-3">Fun Fact</h2>
+                      <div class="underline">
+                      <div class="in-underline w-25"></div>
+                      </div>
+                      <p class="FF fw-light fs-4 p-2">
+                        Venus is often called Earth's "sister planet" because it is similar in size, mass, and composition to our planet. However, despite these similarities, Venus has a very different atmosphere than Earth. In fact, Venus has one of the most hostile environments in our solar system, with a thick atmosphere that is mostly made up of carbon dioxide and sulfuric acid clouds that trap heat.
+                      </p>
+                    </div>
+                    <div class="seemoreFun mt-3">
+                      <div class="seeFF">
+                        <h2 class="p-1">See More</h2>
+                      </div>
+                    </div>
+                  </div>   
+                  <div class="funFact p-3">
+                    <div class="FFPlanet" id="venusP"></div>
+                  </div> 
+                </div>
+
+                <div class="swiper-slide text-white justify-content-between bg-black">
+                  <div class="funFact p-3 m-2">
+                    <div class="in-funfact">
+                      <h2 class="titleFF fw-bold pt-3 ps-3">Fun Fact</h2>
+                      <div class="underline">
+                      <div class="in-underline w-25"></div>
+                      </div>
+                      <p class="FF fw-light fs-4 p-2">
+                        Uranus is the seventh planet from the sun and is often referred to as an "ice giant" because its atmosphere is mostly made up of hydrogen, helium, and methane gas. One interesting fact about Uranus is that it rotates on its side, meaning that its north and south poles are located where other planets have their equators. This is thought to be due to a collision with a massive object early in the planet's history, which knocked it off its original axis. 
+                      </p>
+                    </div>
+                    <div class="seemoreFun mt-3">
+                      <div class="seeFF">
+                        <h2 class="p-1">See More</h2>
+                      </div>
+                    </div>
+                  </div>   
+                  <div class="funFact p-3">
+                    <div class="FFPlanet" id="uranusP"></div>
+                  </div> 
+                </div>
+
+                <div class="swiper-slide text-white justify-content-between bg-black">
+                  <div class="funFact p-3 m-2">
+                    <div class="in-funfact">
+                      <h2 class="titleFF fw-bold pt-3 ps-3">Fun Fact</h2>
+                      <div class="underline">
+                      <div class="in-underline w-25"></div>
+                      </div>
+                      <p class="FF fw-light fs-4 p-2">
+                        Saturn is the sixth planet from the sun and is perhaps best known for its stunning rings, which are made up of billions of ice particles, ranging in size from tiny grains to massive chunks. One interesting fact about Saturn's rings is that they are not solid, but are actually made up of countless individual particles that orbit the planet at different speeds. In fact, the rings are so thin that if you were to compress them into a single object.
+                      </p>
+                    </div>
+                    <div class="seemoreFun mt-3">
+                      <div class="seeFF">
+                        <h2 class="p-1">See More</h2>
+                      </div>
+                    </div>
+                  </div>   
+                  <div class="funFact p-3">
+                    <div class="FFPlanet" id="saturnusP"></div>
+                  </div> 
+                </div>
+
+                <div class="swiper-slide text-white justify-content-between bg-black">
+                  <div class="funFact p-3 m-2">
+                    <div class="in-funfact">
+                      <h2 class="titleFF fw-bold pt-3 ps-3">Fun Fact</h2>
+                      <div class="underline">
+                      <div class="in-underline w-25"></div>
+                      </div>
+                      <p class="FF fw-light fs-4 p-2">
+                        The Moon is Earth's only natural satellite and is the fifth largest moon in the solar system. One interesting fact about the Moon is that it is slowly moving away from Earth at a rate of about 3.8 centimeters (1.5 inches) per year. This is due to the gravitational interaction between the Earth and the Moon, which causes the Moon to transfer some of its energy to the Earth's rotation, gradually slowing it down.
+                      </p>
+                    </div>
+                    <div class="seemoreFun mt-3">
+                      <div class="seeFF">
+                        <h2 class="p-1">See More</h2>
+                      </div>
+                    </div>
+                  </div>   
+                  <div class="funFact p-3">
+                    <div class="FFPlanet" id="moonP"></div>
+                  </div> 
+                </div>
+              </div>
+            </div>
+
+            <div class="front-one">
+              <div class="swiper mySwiper4">
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide text-white bg-black">
+                    <div class="PlanetSliders">
+                      <div class="in-PlanetSliders" id="Nmars"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide text-white bg-black">
+                    <div class="PlanetSliders">
+                      <div class="in-PlanetSliders" id="Nneptune"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide text-white bg-black">
+                    <div class="PlanetSliders">
+                      <div class="in-PlanetSliders" id="Nmercury"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide text-white bg-black">
+                    <div class="PlanetSliders">
+                      <div class="in-PlanetSliders" id="Nvenus"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide text-white bg-black">
+                    <div class="PlanetSliders">
+                      <div class="in-PlanetSliders" id="NUranus"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide text-white bg-black">
+                    <div class="PlanetSliders">
+                      <div class="in-PlanetSliders" id="NSaturn"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide text-white bg-black">
+                    <div class="PlanetSliders">
+                      <div class="in-PlanetSliders" id="Nmoon"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              
+              <div class="front-two">
+                <div class="swiper mySwiper2">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                    <div class="PlanetSliders">
+                      <div class="in-PlanetSliders" id="Nmars"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="PlanetSliders">
+                      <div class="in-PlanetSliders" id="Nneptune"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="PlanetSliders">
+                      <div class="in-PlanetSliders" id="Nmercury"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="PlanetSliders">
+                      <div class="in-PlanetSliders" id="Nvenus"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="PlanetSliders">
+                      <div class="in-PlanetSliders" id="NUranus"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="PlanetSliders">
+                      <div class="in-PlanetSliders" id="NSaturn"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="PlanetSliders">
+                      <div class="in-PlanetSliders" id="Nmoon"></div>
+                    </div>
+                  </div>
+
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>  
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- ipad and phone -->
+        <div class="in-planetPreview-mid mt-4">
+          <div class="titlePP text-center mb-5">
+            <p class="fw-light mt-xl-5 text-white">Discover</p>
+            <h2 class="fw-bold text-white">Other World</h2>
+          </div>
+
+          <div class="back">
+            <div class="swiper mySwiper3">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide bg-black text-white">
+                  <div class="desFunFact">
+                    <div class="in-desFunFact">
+                      <h2 class="titleFF fw-bold p-2">Fun Fact</h2>
+                      <div class="underline">
+                      <div class="in-underline w-25"></div>
+                      </div>
+                      <p class="FF fw-light p-2">
+                        Mars has the largest volcano in the solar system, called Olympus Mons. It stands at a height of 22 kilometers (14 miles), making it almost three times taller than Mount Everest, the tallest mountain on Earth. Interestingly, Olympus Mons is also one of the youngest volcanoes on Mars, with its last eruption estimated to have occurred only about 25 million years ago, which is relatively recent in geological time.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="desFunFact">
+                    <div class="imgFun-Fact p-2" id="marsPP"></div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide bg-black text-white">
+                  <div class="desFunFact">
+                    <div class="in-desFunFact">
+                      <h2 class="titleFF fw-bold p-2">Fun Fact</h2>
+                      <div class="underline">
+                      <div class="in-underline w-25"></div>
+                      </div>
+                      <p class="FF fw-light p-2">
+                        Neptune is the eighth and farthest known planet from the sun in our solar system. One interesting fact about Neptune is that it is the windiest planet in our solar system, with winds that can reach speeds of up to 2,100 kilometers (1,300 miles) per hour. These strong winds are caused by the planet's rapid rotation and its large, thick atmosphere, which is primarily made up of hydrogen, helium, and methane gas.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="desFunFact">
+                    <div class="imgFun-Fact p-2" id="nepPP"></div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide bg-black text-white">
+                  <div class="desFunFact">
+                    <div class="in-desFunFact">
+                      <h2 class="titleFF fw-bold p-2">Fun Fact</h2>
+                      <div class="underline">
+                      <div class="in-underline w-25"></div>
+                      </div>
+                      <p class="FF fw-light p-2">
+                        Mercury is the smallest planet in our solar system, and also the closest planet to the sun. One interesting fact about Mercury is that it has a very slow rotation compared to other planets in our solar system, with one day on Mercury taking about 59 Earth days. However, despite its slow rotation, Mercury has a very fast orbital speed around the sun, completing one orbit in just 88 Earth days.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="desFunFact">
+                    <div class="imgFun-Fact p-2" id="merPP"></div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide bg-black text-white">
+                  <div class="desFunFact">
+                    <div class="in-desFunFact">
+                      <h2 class="titleFF fw-bold p-2">Fun Fact</h2>
+                      <div class="underline">
+                      <div class="in-underline w-25"></div>
+                      </div>
+                      <p class="FF fw-light p-2">
+                        Venus is often called Earth's "sister planet" because it is similar in size, mass, and composition to our planet. However, despite these similarities, Venus has a very different atmosphere than Earth. In fact, Venus has one of the most hostile environments in our solar system, with a thick atmosphere that is mostly made up of carbon dioxide and sulfuric acid clouds that trap heat.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="desFunFact">
+                    <div class="imgFun-Fact p-2" id="venPP"></div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide bg-black text-white">
+                  <div class="desFunFact">
+                    <div class="in-desFunFact">
+                      <h2 class="titleFF fw-bold p-2">Fun Fact</h2>
+                      <div class="underline">
+                      <div class="in-underline w-25"></div>
+                      </div>
+                      <p class="FF fw-light p-2">
+                        Uranus is the seventh planet from the sun and is often referred to as an "ice giant" because its atmosphere is mostly made up of hydrogen, helium, and methane gas. One interesting fact about Uranus is that it rotates on its side, meaning that its north and south poles are located where other planets have their equators. This is thought to be due to a collision with a massive object early in the planet's history, which knocked it off its original axis. 
+                      </p>
+                    </div>
+                  </div>
+                  <div class="desFunFact">
+                    <div class="imgFun-Fact p-2" id="uraPP"></div>
+                  </div>
+                </div>
+                
+                <div class="swiper-slide bg-black text-white">
+                  <div class="desFunFact">
+                    <div class="in-desFunFact">
+                      <h2 class="titleFF fw-bold p-2">Fun Fact</h2>
+                      <div class="underline">
+                      <div class="in-underline w-25"></div>
+                      </div>
+                      <p class="FF fw-light p-2">
+                        Saturn is the sixth planet from the sun and is perhaps best known for its stunning rings, which are made up of billions of ice particles, ranging in size from tiny grains to massive chunks. One interesting fact about Saturn's rings is that they are not solid, but are actually made up of countless individual particles that orbit the planet at different speeds. In fact, the rings are so thin that if you were to compress them into a single object.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="desFunFact">
+                    <div class="imgFun-Fact p-2" id="saturPP"></div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide bg-black text-white">
+                  <div class="desFunFact">
+                    <div class="in-desFunFact">
+                      <h2 class="titleFF fw-bold p-2">Fun Fact</h2>
+                      <div class="underline">
+                      <div class="in-underline w-25"></div>
+                      </div>
+                      <p class="FF fw-light p-2">
+                        The Moon is Earth's only natural satellite and is the fifth largest moon in the solar system. One interesting fact about the Moon is that it is slowly moving away from Earth at a rate of about 3.8 centimeters (1.5 inches) per year. This is due to the gravitational interaction between the Earth and the Moon, which causes the Moon to transfer some of its energy to the Earth's rotation, gradually slowing it down.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="desFunFact">
+                    <div class="imgFun-Fact p-2" id="moonPP"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="pg swiper-pagination"></div>
+            </div>
+            <h2 class="PseeMores text-center fw-light fs-4 mt-4 p-1 mx-auto">See More</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profile -->
+    <section>
+      <div class="bgprofiles p-5" data-aos="fade"  data-aos-duration="1500">
+        <img src="img/moonbg.png" alt="">
+        <div class="desProfiles container text-center text-white">
+          <h2>StellarXplor</h2>
+          <p>Coming soon</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section>
+      <div class="footer container-fluid text-center text-white my-auto">
+        <h2>Copyright © 2021 StellarXplore. All Rights Reserved.</h2>
+      </div>
+    </section>
+    
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- bootsrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- js -->
+    <script src="app.js"></script>
+</body>
+</html>
